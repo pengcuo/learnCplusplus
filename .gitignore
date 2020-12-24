@@ -2,11 +2,11 @@
 build
 build_32
 build_64
-.vs 
-*.ini  
-*.dat  
-input*.txt 
-output*.txt 
+.vs
+*.ini
+*.dat
+input*.txt
+output*.txt
 windows/bytenn-windows/Debug
 windows/bytenn-windows/Release
 windows/bytenn-windows/x64
@@ -38,3 +38,4 @@ test/cmake-build-debug/*
 libs/mac/lib*dylib
 
 a.out
+*.o
