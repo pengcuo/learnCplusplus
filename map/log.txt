@@ -1,0 +1,15 @@
+main.cpp:25:52: error: no template named 'make_shread' in namespace 'std'; did you mean 'make_shared'?
+    std::shared_ptr<std::string> testShared = std::make_shread<string>("xxxx");
+                                              ~~~~~^~~~~~~~~~~
+                                                   make_shared
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/memory:4396:1: note: 'make_shared' declared here
+make_shared(_Args&& ...__args)
+^
+main.cpp:25:64: error: unknown type name 'string'; did you mean 'std::string'?
+    std::shared_ptr<std::string> testShared = std::make_shread<string>("xxxx");
+                                                               ^~~~~~
+                                                               std::string
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/iosfwd:210:65: note: 'std::string' declared here
+typedef basic_string<char, char_traits<char>, allocator<char> > string;
+                                                                ^
+2 errors generated.
